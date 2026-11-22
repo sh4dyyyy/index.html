@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Assignment</title>
+
+    <style>
+
+        body {
+            background-color: #F5F3FF;
+            font-family: Arial;
+        }
+
+        h2 {
+            color: #312E81;
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background-color: #DDD6FE;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #6366F1;
+        }
+
+        .nav1 {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #312E81;
+            padding: 15px;
+        }
+
+        .nav1 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav2 {
+            display: flex;
+            flex-direction: column;
+            background-color: #99F6E4;
+            padding: 15px;
+            width: 100px;
+            gap: 15px;
+        }
+
+        .nav2 a {
+            color: #134E4A;
+            text-decoration: none;
+        }
+
+
+        .cards {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            background-color: #FBCFE8;
+            padding: 30px;
+            color: #831843;
+        }
+
+
+     
+        .bottom {
+            display: flex;
+            align-items: flex-end;
+            height: 200px;
+            background-color: #DDD6FE;
+            gap: 20px;
+        }
+
+        .bottom div {
+            width: 70px;
+            background-color: #8B5CF6;
+        }
+
+
+        
+        .responsive {
+            display: flex;
+            gap: 10px;
+        }
+
+        .responsive div {
+            background-color: #5EEAD4;
+            padding: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .responsive {
+                flex-direction: column;
+            }
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 15px;
+            background-color: #DDD6FE;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>1. Center a Box</h2>
+
+    <div class="box1">
+        <div class="box"></div>
+    </div>
+
+
+    <h2>2. Horizontal Navigation Bar</h2>
+
+    <div class="nav1">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+
+    <h2>3. Vertical Navigation Bar</h2>
+
+    <div class="nav2">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+
+    <h2>4. Card Layout</h2>
+
+    <div class="cards">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+
+
+    <h2>5. Align Items at Bottom</h2>
+
+    <div class="bottom">
+        <div style="height: 50px;"></div>
+        <div style="height: 100px;"></div>
+        <div style="height: 150px;"></div>
+    </div>
+
+
+    <h2>6. Responsive Row to Column</h2>
+
+    <div class="responsive">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+    </div>
+
+
+    <h2>7. Image Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/id/10/300/200" alt="Nature">
+        <img src="https://picsum.photos/id/11/300/200" alt="Forest">
+        <img src="https://picsum.photos/id/12/300/200" alt="Mountain">
+        <img src="https://picsum.photos/id/13/300/200" alt="Landscape">
+    </div>
+
+
+</body>
+</html>
